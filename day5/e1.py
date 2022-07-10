@@ -1,8 +1,14 @@
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+
+
 #Write your code below this row 👇
-#A traditional for loop in Python is used for iterating over lists
-#A range loop can iterate over anything else
-even = 0
-for x in range(2, 101):    
-    if x % 2 == 0:
-        even += x
-print(even)
+count = 0
+start = 0
+for height in student_heights:
+    start += height
+    count += 1    
+print(round(start/count))
